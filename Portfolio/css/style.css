@@ -1,0 +1,660 @@
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    line-height: 1.5;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    
+    background:#ccc;
+    padding-left: 30rem;
+}
+
+section{
+    padding:1rem 5%;
+    min-height: 100vh;
+}
+.me{
+    width: 120px;
+    
+    border-radius: 50% ;
+}
+
+.heading{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    color:rgb(194, 191, 191);
+    text-transform: uppercase;
+}
+
+.heading span{
+    color:var(--main-color);
+    text-transform: uppercase;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 3rem;
+    background:cornflowerblue;
+    color:#fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background:#111;
+    letter-spacing: .2rem;
+}
+
+header{
+    position: fixed;
+    top:0; left:0; bottom:0;
+    /* background:#222; */
+    background:#001;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    flex-flow: column;
+    padding:8rem 2rem;
+    width:30rem;
+    text-align: center;
+}
+
+header .logo{
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+
+header .logo a:hover{
+    letter-spacing: .2rem;
+    color: cornflowerblue;
+}
+
+header .navbar a{
+    display: block;
+    font-size: 2rem;
+    color:#fff;
+    margin:2rem 0;
+}
+
+header .navbar a:hover{
+    letter-spacing: .2rem;
+    color:cornflowerblue;
+}
+
+header .follow a{
+    font-size: 2.5rem;
+    color:#fff;
+    margin:0 .7rem;
+}
+
+header .follow a:hover{
+    color:cornflowerblue;
+}
+
+#menu{
+    position: fixed;
+    top:1rem; right: 1rem;
+    z-index: 10000;
+    background: blue;
+    color:#fff;
+    border-radius: .5rem;
+    padding:1rem 1.5rem;
+    font-size: 3rem;
+    cursor:pointer;
+    display: none;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    
+}
+
+.home .image{
+    flex:1 1 40rem;
+}
+
+.home .image img{
+    width:100%;
+}
+
+.home .content{
+    flex:1 1 40rem;
+}
+
+.home .content .hi{
+    font-size: 2rem;
+    color:antiquewhite;
+}
+
+.home .content h3{
+    font-size: 4.5rem;
+    color:var(--main-color);
+    color:antiquewhite;
+    text-transform: none; 
+}
+
+.home .content h3 span{
+    color:antiquewhite;
+    text-transform:none; 
+}
+
+.home .content .info{
+    font-size: 2.5rem;
+    color:antiquewhite;
+    padding:.5rem 0;
+    text-transform:none;
+}
+
+.home .content .text{
+    font-size: 1.7rem;
+    color:#666;
+    padding:.5rem 0;
+}
+.about .heading{
+    /* color: rgba(37, 33, 33, 0.425); */
+    color: black;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.about .heading span{
+    color:black;
+}
+
+.about .row-1{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding-bottom: 2rem;
+}
+
+.about .row-1 .image{
+    flex:1 1 25rem;
+}
+
+.about .row-1 .image img{
+    height: 90%;
+    width:100%;
+    object-fit: cover;
+    border:1rem solid rgb(170, 163, 163);
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.about .row-1 .content{
+    flex:1 1 50rem;
+}
+
+.about .row-1 .content h3{
+    color:#333;
+    font-size: 3.5rem;
+    text-transform: none;
+}
+
+.about .row-1 .content p{
+    color:rgb(19, 18, 18);
+    font-size: 1.7rem;
+    padding:.5rem 0;
+}   
+
+.about .row-1 .content .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding: 0.5rem 0;
+}
+
+.about .row-1 .content .box-container .box{
+    flex:1 1 20rem;
+    font : 40px;;
+}
+
+.about .row-1 .content .box-container .box span{
+    color:black;
+    font-weight: bold;
+    
+}
+.about .row-1 .content .box-container .box p a{
+text-decoration: none;
+text-transform: none;
+color: black;
+}
+
+
+/* resume style*/
+.resume .heading{
+    color: black;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 10px;
+}
+.rem{
+    
+   
+    display: flex;
+    background-size: 1.5rem;
+    min-height: 100vh;
+    justify-content: center;
+    
+}
+.container{
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    font-size: large;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 50px;
+    box-shadow: 5px 5px 10px lightblue;
+    border-radius: 70%;
+    position: relative;
+    
+
+}
+.photo{
+    height: 200px;
+    width: 180px;
+    border-radius :70%; 
+    display: flex;
+    flex-direction:column ;
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+.left-div{
+    
+    display: inline-block;
+    position: relative;
+    
+    padding: 15px 0px;
+    background: black;
+    
+    
+}
+#nameMe{
+    margin-bottom: 2px;
+    margin-top: 10px;
+    padding: 10px 10px;
+    font-size: x-large;
+    text-align: center;
+}
+#prof{
+    margin-bottom: 2px;
+    margin-top: 5px;
+    padding: 5px 10px;
+    font-size: large;
+    text-align: center;
+    color: white;
+}
+.right-div{
+    
+    display: flexbox;
+    
+    background: white;
+}
+
+.h_three{
+    color: white;
+    text-align: center;
+}
+.mid{
+    color: white;
+    text-align: center;
+    text-transform: none;
+}
+
+.education{
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    padding: 2px 3px;
+    text-transform: none;
+
+}
+div>h3{
+    text-transform: uppercase;
+    color: white;
+    font-size:large;
+}
+.contact{
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    padding: 2px 3px;
+}
+.profile{
+    text-align:left;
+    color:black;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    padding: 2px 3px;
+}
+.pl{
+text-align: left;
+color: black;
+text-transform: uppercase;
+margin-left: 15px;
+margin-bottom: 10px;
+margin-top: 5px;
+font-size: 30px;
+}
+.para{
+    text-align: justify;
+    color: black;
+    margin-left: 13px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-transform: none;
+    align-content: justify;
+    
+    
+}
+div>h5>u{
+    font-size: medium;
+    margin-left: 40px;
+    
+}
+div>ul{
+    margin-top: 10px;
+    color: black;
+}
+div>ul>li{
+    text-align:justify;
+    margin-left: 60px ;
+    margin-bottom: 15px;
+}
+
+
+hr{
+    width: 200px;
+    margin: 20px auto;
+    background-color: white;
+    border:3px solid white;
+}
+#hr{
+    width: 300px;
+    margin: 60px auto;
+    background-color: black;
+    border:3px solid black ;
+}
+/* resumestyle end*/
+
+ /*portfolio*/
+ .portfolio .heading{
+     color: black;
+     text-align: center;
+     margin-bottom: 10px;
+ }
+
+.portfolio .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.portfolio .box-container .box{
+    flex:1 1 30rem;
+    height:25rem;
+    position: relative;
+    overflow:hidden;
+    border:1rem solid #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    background:#fff;
+    border-radius: .5rem;
+}
+
+.portfolio .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    border-radius: .5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio .box-container .box:hover img{
+    height:75%;
+    width:75%;
+}
+
+.portfolio .box-container .box h3{
+    position: absolute;
+     bottom:.5rem; left:1rem;
+    font-size: 3rem;
+    color:#333;
+    text-transform: uppercase;
+}
+.portfolio .box-container .box p{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color:#333;
+    position:absolute;
+     left: 1rem; bottom: -.5rem;
+     
+}
+
+.portfolio .box-container .box .icons{
+    position: absolute;
+    top:1rem; right:1rem;
+}
+
+.portfolio .box-container .box .icons a{
+    display: block;
+    height:4rem;
+    width:4rem;
+    border-radius: .5rem;
+    background: #eee;
+    color:#333;
+    font-size: 1.7rem;
+    line-height: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.portfolio .box-container .box .icons a:hover{
+    
+    background: blue;
+    color:#fff;
+}
+
+.contact .icons-container{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+    
+}
+.contact .heading{
+    color:black;
+    text-align: center;
+    margin-top: -80px;
+}
+    
+.contact .heading span{
+    color:black;
+    margin-bottom: 10px;
+}
+
+.contact .icons-container .icons{
+    flex:1 1 25rem;
+    text-align: center;
+    padding:2rem;
+    background:#fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    
+}
+
+.contact .icons-container .icons i{
+    height:5rem;
+    width:5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    
+    color:#fff;
+    border-radius: 50%;
+    color:blue;
+    background:black;
+}
+
+.contact .icons-container .icons h3{
+    color:#111;
+    font-size: 2rem;
+    padding:.5rem 0;
+    padding-top: 1rem;
+}
+
+.contact .icons-container .icons p{
+    
+    font-size: 1.7rem;
+    text-transform: none;
+    color: black;
+}
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.contact .row form{
+    flex:1 1 55rem;
+    background:#fff;
+    padding:0 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+
+
+
+.contact .row form .box,
+.contact .row form textarea{
+    width: 100%;
+    border-bottom: .1rem solid #333;
+    color:#333;
+    text-transform: none;
+    font-size: 1.7rem;
+    padding:1rem 0;
+    margin:1rem 0;
+}
+
+.contact .row form .box:focus,
+.contact .row form textarea:focus{
+    border-color:cornflowerblue;
+}
+
+.contact .row form .box::placeholder,
+.contact .row form textarea::placeholder{
+    text-transform: capitalize;
+}
+
+.contact .row form textarea{
+    height: 20rem;
+    resize: none;
+    
+}
+
+.contact .row form .btn{
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.footer{
+    margin-top: 2rem;
+    font-size: 2rem;
+    padding:2.5rem;
+    text-align: center;
+    color:rgb(238, 238, 238);
+    background: #000;
+}
+
+.footer span{
+    
+    color: rgb(238, 238, 238);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  /// */
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+    
+    body{
+        padding: 0;
+    }
+
+    #menu-bars{
+        display: initial;
+    }
+
+    header{
+        left:-120%;
+    }
+
+    header.active{
+        left:0%;
+    }
+
+    .cursor-1,
+    .cursor-2{
+        display: none;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    header{
+        width:100%;
+    }
+
+    .experience .box-container .box{
+        padding-right: 0;
+    }
+
+}
