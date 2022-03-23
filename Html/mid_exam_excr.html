@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        form{
+            text-align: center;
+            border: 1px solid wheat;
+            padding-top: 40px;
+            margin-top: 20px;
+        }
+    </style>
+    <title>Login</title>
+</head>
+<body style="background-image: url(wp2762179.jpg); width: 100%;height: 500px;">
+    
+        <form action="#" method="get" target="_self ">
+        
+            <label for="fname" name="fname"> First name:</label><br>
+            <input type="text" id="fname" name="fname" autofocus><br>
+            <label for="lname" name="fname"> Last name:</label><br>
+            <input type="text" id="lname" name="fname"><br>
+            <label for="email" name="fname"> Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="psd" name="fname"> Password:</label><br>
+            <input type="password" id="psd" name="psd"><br><br>
+            <label for="city">Select your city:</label>
+            <select name="city" id="city">
+                <option value=""></option>
+                <option value="Dhaka">Dhaka</option>
+                <option value="Barishal">Barishal</option>
+                <option value="Syleth">Syleth</option>
+                <option value="Comilla">Comilla</option>
+            </select>
+            <br><br>
+            <label for="gndr">Select Gender :</label>
+            <input type="radio" value="Male" name="male">Male
+            <input type="radio" value="Feale" name="male">Female
+            <input type="radio" value="Other" name="male">Other <br>
+            <label for="bdate">Select your birthday</label>
+            <input type="date"id="bdate"> <br><br>
+            <label for="phn">Mobile</label><br>
+            <input type="tel" id="phn" name="phn" size="11" maxlength="11"><br>
+            <label for="v"> Chose or Input brand:</label><br>
+            <input list="brand" id="v">
+            <datalist id="brand">
+                <option value="Walton">Walton</option>
+                <option value="Xiaomi">Xiaomi</option>
+                <option value="Vivo">Vivo</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Apple">Apple</option>
+
+            </datalist>
+            <br>
+            <input type="button" value="Sign in" onclick="alert('Want to sign in?')">
+        
+        
+        </form>
+    
+    
+
+    
+</body>
+</html>
